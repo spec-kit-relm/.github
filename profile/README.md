@@ -14,6 +14,23 @@ automated gates and named reviewers decide what merges.
 3. 🛠️ **[speckit-platform](https://github.com/spec-kit-relm/speckit-platform)** — the machinery: canonical
    constitution, Spec Kit presets/extension, CI gates, bootstrap scripts.
 
+## Build status
+
+Status of `main` in every repository. **Build** is the repository's own CI (tests, build, platform
+checks; e2e-tests also runs nightly). **SDD gates** is `sdd / sdd-gates` + `contracts / contract-check`
+(constitution drift, spec lint, contract rules). A red badge links to the failing run.
+
+| Repository | Build | SDD gates |
+|------------|-------|-----------|
+| [speckit-platform](https://github.com/spec-kit-relm/speckit-platform) | [![ci](https://github.com/spec-kit-relm/speckit-platform/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/spec-kit-relm/speckit-platform/actions/workflows/ci.yml?query=branch%3Amain) | — |
+| [product-specs](https://github.com/spec-kit-relm/product-specs) | — | [![sdd](https://github.com/spec-kit-relm/product-specs/actions/workflows/sdd.yml/badge.svg?branch=main)](https://github.com/spec-kit-relm/product-specs/actions/workflows/sdd.yml?query=branch%3Amain) |
+| [inventory-service](https://github.com/spec-kit-relm/inventory-service) | [![ci](https://github.com/spec-kit-relm/inventory-service/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/spec-kit-relm/inventory-service/actions/workflows/ci.yml?query=branch%3Amain) | [![sdd](https://github.com/spec-kit-relm/inventory-service/actions/workflows/sdd.yml/badge.svg?branch=main)](https://github.com/spec-kit-relm/inventory-service/actions/workflows/sdd.yml?query=branch%3Amain) |
+| [orders-service](https://github.com/spec-kit-relm/orders-service) | [![ci](https://github.com/spec-kit-relm/orders-service/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/spec-kit-relm/orders-service/actions/workflows/ci.yml?query=branch%3Amain) | [![sdd](https://github.com/spec-kit-relm/orders-service/actions/workflows/sdd.yml/badge.svg?branch=main)](https://github.com/spec-kit-relm/orders-service/actions/workflows/sdd.yml?query=branch%3Amain) |
+| [web-storefront](https://github.com/spec-kit-relm/web-storefront) | [![ci](https://github.com/spec-kit-relm/web-storefront/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/spec-kit-relm/web-storefront/actions/workflows/ci.yml?query=branch%3Amain) | [![sdd](https://github.com/spec-kit-relm/web-storefront/actions/workflows/sdd.yml/badge.svg?branch=main)](https://github.com/spec-kit-relm/web-storefront/actions/workflows/sdd.yml?query=branch%3Amain) |
+| [e2e-tests](https://github.com/spec-kit-relm/e2e-tests) | [![ci](https://github.com/spec-kit-relm/e2e-tests/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/spec-kit-relm/e2e-tests/actions/workflows/ci.yml?query=branch%3Amain) | [![sdd](https://github.com/spec-kit-relm/e2e-tests/actions/workflows/sdd.yml/badge.svg?branch=main)](https://github.com/spec-kit-relm/e2e-tests/actions/workflows/sdd.yml?query=branch%3Amain) |
+
+`sdd-handbook` and `.github` have no CI; changes reach them through reviewed pull requests.
+
 ## Repositories
 
 | Repository | Team | What it is | Spec Kit kind |
