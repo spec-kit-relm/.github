@@ -1,0 +1,21 @@
+name: Task
+description: A task from a feature's tasks.md (normally created by /speckit.github.taskstoissues)
+labels: ["task", "lane:feature"]
+body:
+  - type: input
+    id: feature
+    attributes:
+      label: Feature ID
+      placeholder: RELM-1
+    validations: { required: true }
+  - type: input
+    id: task
+    attributes:
+      label: Task ID and phase
+      placeholder: T012 — Phase 3 (US1)
+    validations: { required: true }
+  - type: textarea
+    id: details
+    attributes:
+      label: Task text from tasks.md
+    validations: { required: true }

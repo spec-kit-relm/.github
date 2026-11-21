@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: New product feature (cross-repo or repo-local)
+    url: https://github.com/spec-kit-relm/product-specs/issues/new?template=product-feature.yml
+    about: Every feature starts as a Feature issue in product-specs — its number becomes RELM-<n>.
+  - name: How do we work? (SDD handbook)
+    url: https://github.com/spec-kit-relm/sdd-handbook
+    about: Process, rules, and playbooks.

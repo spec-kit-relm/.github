@@ -1,0 +1,24 @@
+name: Bug
+description: Behavior differs from an existing spec (bugfix lane)
+labels: ["lane:bugfix"]
+body:
+  - type: input
+    id: scenario
+    attributes:
+      label: Spec scenario ID (if any)
+      placeholder: RELM-1/US2/AS2
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior (quote the spec)
+    validations: { required: true }
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations: { required: true }
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction (synthetic data only — no production personal data)
+    validations: { required: true }

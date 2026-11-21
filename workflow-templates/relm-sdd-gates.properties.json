@@ -1,0 +1,7 @@
+{
+  "name": "Relm SDD gates",
+  "description": "Constitution drift, spec lint, PR traceability and contract checks from spec-kit-relm/speckit-platform.",
+  "iconName": "octicon checklist",
+  "categories": ["Automation"],
+  "filePatterns": [".specify/memory/constitution.md"]
+}

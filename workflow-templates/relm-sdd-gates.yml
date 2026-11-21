@@ -1,0 +1,17 @@
+# Relm SDD gates — required in every Spec Kit repository.
+name: sdd
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize, reopened, labeled, unlabeled]
+  push:
+    branches: [$default-branch]
+
+jobs:
+  sdd:
+    uses: spec-kit-relm/speckit-platform/.github/workflows/sdd-gates.yml@v1
+    with:
+      repo-kind: backend   # product | backend | frontend | qa
+
+  contracts:
+    uses: spec-kit-relm/speckit-platform/.github/workflows/contract-check.yml@v1
