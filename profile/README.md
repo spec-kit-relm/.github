@@ -10,7 +10,7 @@ automated gates and named reviewers decide what merges.
 1. 📘 **[sdd-handbook](https://github.com/spec-kit-relm/sdd-handbook)** — how we work: the AI SDLC,
    work lanes, company/team/repository rules, playbooks.
 2. 🧭 **[product-specs](https://github.com/spec-kit-relm/product-specs)** — every feature starts here
-   as a Feature issue (`RELM-<n>`) and a product spec. Worked example: **RELM-1 Stock reservation at checkout**.
+   as a Feature issue (`RELM-<n>`) and a product spec. Worked example: **RELM-2 Stock reservation at checkout**.
 3. 🛠️ **[speckit-platform](https://github.com/spec-kit-relm/speckit-platform)** — the machinery: canonical
    constitution, Spec Kit presets/extension, CI gates, bootstrap scripts.
 
