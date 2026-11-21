@@ -7,6 +7,10 @@ on:
   push:
     branches: [$default-branch]
 
+permissions:
+  contents: read
+  pull-requests: read
+
 jobs:
   sdd:
     uses: spec-kit-relm/speckit-platform/.github/workflows/sdd-gates.yml@v1
